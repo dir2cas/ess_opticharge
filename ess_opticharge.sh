@@ -3,7 +3,7 @@
 # VenusOS scheduled charge automation script (a.k.a. primitive node red bashing)
 # Intended to be run by cron on a predefined time (not running as a process)
 #
-# This script will process ONLY if the ESS mode is set to Optimized mode without BatteryLife or to Keep batteries charged
+# This script will process ONLY if the ESS mode is set to Optimized mode without BatteryLife or to Keep batteries charged.
 #
 #
 ##################################################################################
