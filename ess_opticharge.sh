@@ -62,13 +62,13 @@ WEATHER_FORECAST_FILE="/tmp/weather_forecast.txt"
 ##################################################################################
 # Minute   Hour   Day of Month       Month          Day of Week     user   Command    
 # (0-59)  (0-23)     (1-31)    (1-12 or Jan-Dec)  (0-6 or Sun-Sat)                
-#   0        2          12             *               0,6          root	 /usr/bin/find 	# This line executes the "find" command at 2AM on the 12th of every month that a Sunday or Saturday falls on.
-# 	0 		 * 			* 			   * 				* 			root	 /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every 1 hour     (not practical)
-#   */30 	 * 			* 			   * 				*			root	 /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every 30 minutes (not practical)
-#   58 		 23 		* 			   * 				* 			root	 /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every day at 23:58 (11:58PM) (good use-case example)
+# 0         2         12             *               0,6          root   /usr/bin/find 	# This line executes the "find" command at 2AM on the 12th of every month that a Sunday or Saturday falls on.
+# 0	        *         *              *               *            root   /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every 1 hour     (not practical)
+# */30      *         *              *               *            root   /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every 30 minutes (not practical)
+# 58        23        *              *               *            root   /data/scripts/ess_opticharge/ess_opticharge.sh  # run ess_opticharge.sh every day at 23:58 (11:58PM) (good use-case example)
 #
 # We can use copies of the script with different settings for example for each month throughout the year
-#	1 		 0 			* 			   4 				* 		 	root	/data/scripts/ess_opticharge/ess_opticharge_april.sh  # run the custom script every day on April at 00:01 (1:01AM)
+# 1         0         *              4               *            root   /data/scripts/ess_opticharge/ess_opticharge_april.sh  # run the custom script every day on April at 00:01 (1:01AM)
 #
 ##################################################################################
 # END of Usage help and user defined variables section
