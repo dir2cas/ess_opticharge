@@ -18,7 +18,7 @@ SCRIPTNAME_PATH="/data/scripts/ess_opticharge"
 # If good PV production weather is expected, then pre-charge (during off peak tariff time) the battery up to this SOC threshold, only if the current SOC is <= STOP_ON_SOC_GOOD_PV.
 # The value must be between [current_MIN_SOC_value - 90]. If the setting is out of this range, it is set to the edge value closer to the setting. This is done due to safety purposes.
 STOP_ON_SOC_GOOD_PV="60"
-# If bad PV production weather is expected, then pre-charge (during off peak tariff time) the battery up to this SOC threshold, only if the current SOC is <= STOP_ON_SOC_BAD_PV. This is generally greater than STOP_ON_SOC_GOOD_PV. 
+# If bad PV production weather is expected, then pre-charge (during off peak tariff time) the battery up to this SOC threshold, only if the current SOC is <= STOP_ON_SOC_BAD_PV. This is generally greater than STOP_ON_SOC_GOOD_PV.
 # The value must be between [current_MIN_SOC_value - 95]. If the setting is out of this range, it is set to the edge value closer to the setting. This is done due to safety purposes.
 STOP_ON_SOC_BAD_PV="75"
 #
